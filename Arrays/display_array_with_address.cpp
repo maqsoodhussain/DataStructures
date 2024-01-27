@@ -1,6 +1,6 @@
 #include<iostream>
 int main(){
-    arr[5]={1,2,3,4,5}; 
+    int arr[5]={1,2,3,4,5}; 
     //printing address and element 
     printf("arr[0]=%d Address= %u",arr[0],&arr[0]);
     printf("arr[1]=%d Address= %u",arr[1],&arr[1]);
