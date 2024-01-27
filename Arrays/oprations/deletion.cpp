@@ -15,7 +15,7 @@ int main(){
     cin>>num[i];
 
   //printing elements
-    cout<<"\n  Elements with Address\n";
+    cout<<"\n  Elements are \n";
 
     for(i=0; i<n; i++)
        {
@@ -40,8 +40,10 @@ int main(){
      //printing after delteion
        for(i=0; i<n; i++){
         if(num[i]!=0)
+        {
           cout<<" ";
           cout<<num[i];
+          }
        }
     return 0;
 }
