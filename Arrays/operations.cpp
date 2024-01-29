@@ -112,6 +112,35 @@ void insertElement(){
 
 }
 
+//function for searching an element in array 
+ void searching(){
+         int arr2[20]={0};
+    
+    int z =1;
+   // set 1,2,3,4,5 in array using z varable 
+    for(int i=0; i<5; i++){
+    arr2[i]= z;
+    z++;
+    }
+   cout<<"total elements in array are "<<5<<"\n";
+
+   int ele;
+
+   cout<<"\nenter  Element you want to search : ";
+     cin>>ele;
+  
+int i;
+ for(i=0; i<5; i++){
+    if(arr2[i]==ele)
+        break;
+    }
+
+  if(arr2[i]==ele)
+        cout<<"Found\n";
+  else
+   cout<<"Not Found";
+
+ }
 
 int main(){
     //calling traversing array
@@ -122,6 +151,9 @@ int main(){
     
     //calling insertElement function
         //insertElement();
+    
+    //calling searching function
+        searching();
 
     return 0;
 }
