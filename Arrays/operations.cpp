@@ -63,9 +63,52 @@ void deleteElement(){
     for (int i=0; i < n; i++){
         if(arr2[i] !=0)  //print until we reach 0
          cout<<arr2[i]<<" ";
+    }   
+
+}
+
+
+//creaing function for Insert an element in array
+void insertElement(){
+
+    //creaing array of 20 elements initialize with 0
+    int arr2[20]={0};
+    
+    int z =1;
+   // set 1,2,3,4,5 in array using z varable 
+    for(int i=0; i<5; i++){
+    arr2[i]= z;
+    z++;
     }
+
+
     
+    cout<<"Array Elements are : \n";
+     for(int i = 0; i <5; i++)
+     cout<<arr2[i]<<" ";
+     
     
+
+     int p,ele; //varable for storing postion and element 
+     //Enter position and element 
+     cout<<"\nenter Postition and Element for Inseration : ";
+     cin>>p>>ele;
+     p--;
+ 
+     //logic for Inseration
+     int i;
+     for(i=5; i!=p; i--)
+       arr2[i] = arr2[i-1];
+
+    arr2[i]=ele;
+   
+
+    //printing after Inseration
+    cout<<"\nAfter deleting \n";
+    for (int i=0; i <=5; i++){
+        if(arr2[i] !=0)  //print until we reach 0
+         cout<<arr2[i]<<" ";
+    }   
 
 }
 
@@ -75,8 +118,10 @@ int main(){
        //traversing();
     
     //calling deleteElement function
-       deleteElement();
-
+      // deleteElement();
+    
+    //calling insertElement function
+        //insertElement();
 
     return 0;
 }
