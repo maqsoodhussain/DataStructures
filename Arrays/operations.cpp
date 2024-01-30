@@ -142,6 +142,47 @@ int i;
 
  }
 
+
+//merging two arrays "mergin at alternative positions "
+void merging(){
+        
+         int arr1[5]={1,2,3,4,5};
+         int arr2[5]={6,7,8,9,10};
+
+         int resultArray[10];
+    
+    cout<<"\nElements of array 1 : ";
+    for(int i=0; i<5; i++){
+       cout<<arr1[i]<<" ";
+    }
+  
+    cout<<"\nElements of array 2 : ";
+     for(int i=0; i<5; i++){
+       cout<<arr2[i]<<" ";
+    }
+
+    //logic for merging array1 and array2 and put in resultArray
+    //shorting elements in alernating positions
+    int i=0,k=0,h=0;
+    while (i<10){
+      if(i%2==0)
+        resultArray[i]=arr1[k++];
+      else
+        resultArray[i]=arr2[h++];
+
+      i++;
+    }
+    
+      cout<<"\nResult array  : ";
+     for(int i=0; i<10; i++){
+       cout<<resultArray[i]<<" ";
+    }
+
+
+
+ }
+
+
 int main(){
     //calling traversing array
        //traversing();
@@ -153,7 +194,10 @@ int main(){
         //insertElement();
     
     //calling searching function
-        searching();
+        //searching();
+ 
 
+    //calling merging function
+         merging();
     return 0;
 }
