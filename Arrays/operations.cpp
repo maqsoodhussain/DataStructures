@@ -182,6 +182,38 @@ void merging(){
 
  }
 
+//sorting one of the easiest sort
+ void sortArray(){
+      
+
+        int arr1[5]={4,6,1,3,2};
+        int i;
+    
+    cout<<"\nElements before sorting : ";
+    for(int i=0; i<5; i++){
+       cout<<arr1[i]<<" ";
+    }
+    
+
+    int sum=0;
+    for(int i=0; i<5; i++){
+      sum =sum + arr1[i];
+    }
+
+    cout<<"\n Sum of array: "<<sum;
+
+  cout<<"\n After sorting : ";
+    //logic for sorting  and pring elements also 
+    for(int k=0; k<sum; k++){
+       for(i=0; i<5;i++){
+        if(arr1[i]==k)
+        cout<<arr1[i]<<" ";
+       }
+    }
+
+
+ }
+
 
 int main(){
     //calling traversing array
@@ -198,6 +230,9 @@ int main(){
  
 
     //calling merging function
-         merging();
+        //merging();
+
+    //calling sorting function 
+      sortArray();
     return 0;
 }
