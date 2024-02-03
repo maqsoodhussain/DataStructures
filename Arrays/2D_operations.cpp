@@ -27,7 +27,12 @@ using namespace std;
   cout<<"\nEnter Element and positon where you want to enter: \n";
   cin>>el>>at;
    
-   
+   //if user enter greater positon than elements
+   if(at>n){
+    cout<<"You enter wrong position ";
+    return ;
+   }
+
 
   for (i=n; i >=at; i--){
     *p = *(p-1);
