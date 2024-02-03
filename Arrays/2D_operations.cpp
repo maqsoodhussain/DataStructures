@@ -24,6 +24,23 @@ using namespace std;
     for(i =0; i<n; i++,p++)
     cout<<" "<<*p;
 
+  cout<<"\nEnter Element and positon where you want to enter: \n";
+  cin>>el>>at;
+   
+   
+
+  for (i=n; i >=at; i--){
+    *p = *(p-1);
+    p--;
+   }
+   *p = el;
+   p = &arr[0][0];
+
+
+   cout<<"\n After Insertion \n";
+    for(i =0; i<+n; i++,p++)
+    cout<<" "<<*p;
+  
     
  }
 
