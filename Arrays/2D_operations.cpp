@@ -33,7 +33,7 @@ using namespace std;
     return ;
    }
 
-
+//logic of insertion 
   for (i=n; i >=at; i--){
     *p = *(p-1);
     p--;
