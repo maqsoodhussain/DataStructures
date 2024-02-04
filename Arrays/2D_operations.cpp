@@ -78,6 +78,23 @@ using namespace std;
     at--;
     p = &arr[0][0];
     p = p+at; //position where we want to delete
+    
+    for (i=at ; i < n; i++){
+      *p = *(p+1);
+         p++;
+    }
+
+    *p = 0;
+
+   p = &arr[0][0];
+ 
+ //priting after deltion 
+ 
+    for(i =0; i<n-1; i++,p++)
+    cout<<" "<<*p;
+   
+
+    
 
 
  }
