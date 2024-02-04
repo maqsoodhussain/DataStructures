@@ -50,9 +50,45 @@ using namespace std;
  }
 
 
+ //function for deleteion 
+ void deletion(){
+     
+       //creating array
+      int arr[5][5]={0,0},i,n,at;
+      int* p;
+
+      cout<<"Enter how many elments you want to enter (<25)\n";
+      cin>>n;
+
+     //pointer p holds first index address
+      p = &arr[0][0];
+ 
+      cout<<" \nEnter "<<n<<" Elements: ";
+      for(i =0; i<n; i++)
+          cin>> *p++;
+
+    p = &arr[0][0];
+    cout<<"\n You enter \n";
+    for(i =0; i<n; i++,p++)
+    cout<<" "<<*p;
+
+    cout<<"\n Enter position where you want to delete <"<<n<<" : ";
+    cin>>at;
+
+    at--;
+    p = &arr[0][0];
+    p = p+at; //position where we want to delete
+
+
+ }
+
+
  //driver program
 int main(){
+    //calling insertion function 
+       // inseration();
 
-    inseration();
+      //calling delection function 
+         deletion();
     return 0;
 }
