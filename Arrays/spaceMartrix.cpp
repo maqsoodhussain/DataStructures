@@ -17,28 +17,43 @@ int main(){
  int nonZeroVal= 0;
  for(int i=0; i<5; i++)
     for (int j = 0; j<6; j++){
-       if(sparceMatrix[i][j]!=0)
+       if(sparceMatrix[i][j]!=0){
+           //cout<<sparceMatrix[i][j]<<" ";
             nonZeroVal++;
+         }
     }
 
-    cout<<"Non-Zero Elements : "<<nonZeroVal;
+    cout<<"Non-Zero Elements : "<<nonZeroVal<<endl;
 
    //Defining triplet Matrix
    //3 x p , (3-> row, col, value) (p->non_zero elements)
     
    int tripletMatrix[3][nonZeroVal];
     
-   //Generate Triplet Matrix
+   // //Generate Triplet Matrix
 
-   int k= 0;
-   for(int i=0; i<5; i++)
-      for (int j = 0; j<6; j++){
-            if(sparceMatrix[i][j]!=0){
-               tripletMatrix[0][k]=i;
-               tripletMatrix[1][k]=i;
-               tripletMatrix[2][k]=sparceMatrix[i][j];
-               k++;
-            }
+    int k=0;
+   for(int i=0; i<5; i++){
+      for(int j=0; j<6; j++){
+         if(sparceMatrix[i][j] != 0){
+           
+            tripletMatrix[0][k]=i;
+            tripletMatrix[1][k]=j;
+            tripletMatrix[2][k]=sparceMatrix[i][j];
+            k++;
+         }
       }
+   }
+
+ 
+
+   //Display Triplet Matrix
+
+    cout << "Triplet Matrix (Row, Column, Value):" << endl;
+    for(int col = 0; col < nonZeroVal; col++) {
+        cout  << tripletMatrix[0][col] << " " << tripletMatrix[1][col] << " " << tripletMatrix[2][col] << endl;
+    }
+
+
     return 0;
 }
