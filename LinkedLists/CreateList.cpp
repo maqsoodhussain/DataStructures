@@ -23,6 +23,7 @@ int main(){
     item0.n=1;
     item0.p=&item1.n;
 
+    //printing data item of each node
     cout<<item0.n<<" ";
     cout<<item1.n<<" ";
     cout<<item2.n;
