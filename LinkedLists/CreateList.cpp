@@ -8,10 +8,11 @@ struct list{
 };
 
 int main(){
+    //creating list items
     struct list item0, item1,item2;
     item2.n=3;
     item2.p = NULL;
-
+    
     item1.n =2;
     item1.p= &item2.n;
 
