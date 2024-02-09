@@ -2,12 +2,12 @@
 using namespace std;
 
 //structure of linked list
-struct node{
+struct Node{
     int data;
-    node *next;
+    Node *next;
 
     //creaing constructure
-    node(int item=0){
+    Node(int item=0){
         data = item;
         next =NULL;
     }
@@ -15,5 +15,9 @@ struct node{
 
 
 int main(){
+    Node *head = new Node(10);
+    head->next= new Node(20);
+    head->next->next = new Node(30);
+
 
 }
