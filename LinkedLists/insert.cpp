@@ -50,7 +50,7 @@ void Linked_list:: Inseration(int item){
     cout<<"Inserted : "<<newnode->data<<endl;
     }
 
-//fucnction fof displaying items or data 
+//fucnction of displaying items or data 
 void Linked_list:: display(){
         Node *temp = head;
         while(temp !=nullptr){
