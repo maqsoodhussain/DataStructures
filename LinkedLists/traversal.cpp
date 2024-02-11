@@ -29,8 +29,12 @@ int main(){
     third->data = 3;
     third->next = NULL;
     
-
-
+//traversing above nodes 
+while(head!= NULL){
+    cout<<head->data<<"->";
+    head = head ->next;
+}
+cout<<"NULL";
 
     return 0;
 }
