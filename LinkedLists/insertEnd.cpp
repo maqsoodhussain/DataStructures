@@ -10,28 +10,6 @@ class Node{
     Node *next;
 };
 
-//creating linked list class
-class Linked_list{
-    private:
-    //creating head node
-        Node *head;
-
-    public:
-    Linked_list(){
-        head = NULL;
-    }
-
-    //decleration because function are delcerated outside class 
-
-  void insertEnd(Node**,int);
-  void display();
-
-};
-
-//creating functions outside class so resolution oprator :: used 
-
-
-
 //-------Insertation function method 2 --- other waay ----
 void insertEnd(Node **head, int item){
         Node *newnode = new Node();
@@ -40,7 +18,7 @@ void insertEnd(Node **head, int item){
 
         if(*head==NULL){
             *head = newnode;
-            cout<<"Inserted "<<newnode->data<<endl;
+            cout<<"Inserted : "<<newnode->data<<endl;
             return;
         }
 
@@ -50,15 +28,28 @@ void insertEnd(Node **head, int item){
         
         
         temp->next= newnode;
+        cout<<"Inserted : "<<newnode->data;
 }
 
-
+void display(Node *head){
+    while(head !=NULL){
+        cout<<head->data<<" -> ";
+        head = head ->next;
+    }
+    cout<<"NULL";
+}
 
 int main(){
+
+    //creating first node 
     Node *head = NULL;
     insertEnd(&head, 20);
     insertEnd(&head, 30);
 
+    cout<<endl;
+
+    //pasing first node to function 
+    display(head);
     return 0;
 
 
