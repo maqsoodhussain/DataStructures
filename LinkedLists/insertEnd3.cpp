@@ -28,7 +28,7 @@ void insertEnd(Node **head, int data){
     cout<<"Inserted: "<<newnode->data<<endl;
 }
 
-
+//methode to display 
 void display(Node *head){
     while(head!=nullptr){
         cout<<head->data <<"->";
@@ -42,6 +42,8 @@ void display(Node *head){
 int main(){
        
         Node *head = nullptr;
+
+        //pass by address
         insertEnd(&head, 10);
         insertEnd(&head, 20);
 
