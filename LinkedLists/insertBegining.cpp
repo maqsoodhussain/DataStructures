@@ -19,7 +19,7 @@ class Linked_list{
 
      
 };
-
+//method to insert at begining of linked list
 void Linked_list:: insertBeg(int data){
             Node *newnode = new Node();
             newnode->data = data;
@@ -27,7 +27,7 @@ void Linked_list:: insertBeg(int data){
             head = newnode;
             cout<<"Inserted: "<<newnode->data<<endl;
         }
-
+//this method is used to display elements of linke list 
 void Linked_list:: display(){
         Node *temp = head;
         while(temp !=nullptr){
@@ -40,9 +40,15 @@ void Linked_list:: display(){
     }
 
 int main(){
+    //creating list mylilst
     Linked_list mylist ;
-
-    mylist.insertBeg(4);
+     
+     //inserting two nodes in linked list
+     mylist.insertBeg(4);
      mylist.insertBeg(3);
+    
+    //used to display linked list 
      mylist.display();
+
+     return 0;
 }
