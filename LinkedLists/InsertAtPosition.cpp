@@ -91,6 +91,7 @@ int main(){
     li.insertEnd(10);
     li.insertEnd(12);
     li.insertEnd(12);
+    //insert postion at you want to enter and enter element 
     li.insertAtPostion(2, 3);
     
     
