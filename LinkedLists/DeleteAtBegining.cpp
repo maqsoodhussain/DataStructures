@@ -84,6 +84,7 @@ int main(){
     
     li.display();
     
+    
     li.DeleteBeg();
 
     cout<<"\n After Delete\n"; 
