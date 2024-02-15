@@ -79,7 +79,7 @@ int main(){
     li.insertEnd(10);
     li.insertEnd(12);
     li.insertEnd(12);
-     cout<<"\n  SIZE OF LINKED LIST BEFORE : "<<max_size<<endl;
+    cout<<"\n  SIZE OF LINKED LIST BEFORE : "<<max_size<<endl;
     cout<<"\n Before Delete\n";
     
     li.display();

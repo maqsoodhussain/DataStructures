@@ -26,7 +26,7 @@ void display(Node *head){
 
 
 int main(){
-    Node *head = nullptr;
+    Node *head = NULL;
     insertBeg(&head, 10);
     insertBeg(&head, 11);
     insertBeg(&head, 12);
