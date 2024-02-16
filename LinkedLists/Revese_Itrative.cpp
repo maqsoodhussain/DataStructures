@@ -42,7 +42,7 @@ void insertEnd(int item){
     cout<<"Inserted : "<<newnode->data<<endl;
 }
 
-//function to Delete at Begining of Linked list
+//function to Reverse  Linked list Itrative method
 void reverse(){
             Node *current = head;
             Node *prev= nullptr;
