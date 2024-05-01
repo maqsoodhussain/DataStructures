@@ -1,3 +1,4 @@
+//compile it using versin 11  : g++ -std=c++11 parenthesisCheck.cpp
 #include<iostream>
 #include<string>
 using namespace std;
@@ -39,12 +40,17 @@ bool isBalanced(string S) {
 }
 
 int main() {
-    string str = "{()}";
+    string str;
+    cout<<"Enter Expression : ";
+    cin>>str;
 
     if (isBalanced(str))
         cout << "balanced";
     else
         cout << "not balanced";
 
+    return 0;
+
+    
     return 0;
 }
