@@ -139,7 +139,16 @@ void inorder(struct Node* root)
 
 struct Node* inPred(struct Node* ptr)
 {
-    //write the definition to find the in-order predecessor of node
+    // If the left thread is true, the predecessor is the left child
+    if (ptr->lthread)
+        return ptr->left;
+
+    // Otherwise, go to the right child and then keep going left until finding the leaf node
+    ptr = ptr->left;
+    while (!ptr->rthread)
+        ptr = ptr->right;
+    
+    return ptr;
 }
 
 // Here 'par' is pointer to parent Node and 'ptr' is
