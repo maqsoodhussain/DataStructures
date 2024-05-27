@@ -21,7 +21,6 @@ class CircularQueue{
 
 bool CircularQueue::isfull(){
    // return ((rear +1 ) % 10) == front; // one way to check is queue full or not 
-
    //another way 
     if(front == 0 && rear == SIZE-1){
         //cout<<"Queue Is Full"<<endl;
@@ -48,7 +47,6 @@ bool CircularQueue::isEmpty(){
         return false;
 
 }
-
 void CircularQueue::enQueue(){
         int data;
         cout<<"Enter Element: ";
@@ -65,8 +63,6 @@ void CircularQueue::enQueue(){
 
             }
         }
-
-
 int CircularQueue::deQueue(){
     if(isEmpty()){
         cout<<"Queue is Empty"<<endl;
@@ -81,7 +77,6 @@ int CircularQueue::deQueue(){
         return temp;
     }
 }
-
 void CircularQueue::display(){
     if(isEmpty()){
         cout<<"Queue is Empty"<<endl;
@@ -90,12 +85,10 @@ void CircularQueue::display(){
         for(int i=front; i!=rear, i = ((i+1)%SIZE);){
                 cout<< a[i]<<" ";
         }
-
         cout<<" "<<a[rear]<<endl;
     }
     
 }
-
 int CircularQueue::size(){
         if(isEmpty()){
             return 0;
@@ -103,14 +96,9 @@ int CircularQueue::size(){
             return rear-front+1;
         }
 }
-
 int main(){
-
-
     CircularQueue queue;
         while(true){
-
-        
         cout<<"\n-------------------------------------------------------"<<endl;
         cout<<"1.ENQUEUE ";
         cout<<"2.DEQUEUE ";
@@ -121,8 +109,6 @@ int main(){
         cout<<"Enter choice : ";
         int c ;
         cin>>c;
-
-
          switch (c)
          {
             case 1: queue.enQueue();continue;
@@ -134,7 +120,5 @@ int main(){
          }
 
     }
-
-
     return 0;
 }
